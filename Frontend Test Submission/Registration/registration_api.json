@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "c1bb91ab-3201-4dec-b436-916ea5651f0e",
+		"name": "Registration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40165116"
+	},
+	"item": [
+		{
+			"name": "http://20.244.56.144/evaluation-service/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"22bq1a05l0@vvit.net\",\r\n    \"name\" : \"Syed Jasmin\",\r\n    \"rollNo\" : \"22BQ1A05L0\",\r\n    \"accessCode\": \"PnVBFV\",\r\n    \"clientID\": \"8bf0b10b-e1a8-4959-8c59-26b87fb1fec3\",\r\n    \"clientSecret\": \"mkSzcDFJdjxHPWSR\"\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://20.244.56.144/evaluation-service/auth",
+					"protocol": "http",
+					"host": [
+						"20",
+						"244",
+						"56",
+						"144"
+					],
+					"path": [
+						"evaluation-service",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://20.244.56.144/evaluation-service/auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"22bq1a05l0@vvit.net\",\r\n    \"name\" : \"Syed Jasmin\",\r\n    \"rollNo\" : \"22BQ1A05L0\",\r\n    \"accessCode\": \"PnVBFV\",\r\n    \"clientID\": \"8bf0b10b-e1a8-4959-8c59-26b87fb1fec3\",\r\n    \"clientSecret\": \"mkSzcDFJdjxHPWSR\"\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://20.244.56.144/evaluation-service/auth",
+					"protocol": "http",
+					"host": [
+						"20",
+						"244",
+						"56",
+						"144"
+					],
+					"path": [
+						"evaluation-service",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://20.244.56.144/evaluation-service/logs",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiYXVkIjoiaHR0cDovLzIwLjI0NC41Ni4xNDQvZXZhbHVhdGlvbi1zZXJ2aWNlIiwiZW1haWwiOiIyMmJxMWEwNWwwQHZ2aXQubmV0IiwiZXhwIjoxNzU0MDI4ODA1LCJpYXQiOjE3NTQwMjc5MDUsImlzcyI6IkFmZm9yZCBNZWRpY2FsIFRlY2hub2xvZ2llcyBQcml2YXRlIExpbWl0ZWQiLCJqdGkiOiI4NjAzYTMzNC1kNmNkLTQ5MzMtOTIzNi05Y2NmMWY1MGY2MjYiLCJsb2NhbGUiOiJlbi1JTiIsIm5hbWUiOiJzeWVkIGphc21pbiIsInN1YiI6IjhiZjBiMTBiLWUxYTgtNDk1OS04YzU5LTI2Yjg3ZmIxZmVjMyJ9LCJlbWFpbCI6IjIyYnExYTA1bDBAdnZpdC5uZXQiLCJuYW1lIjoic3llZCBqYXNtaW4iLCJyb2xsTm8iOiIyMmJxMWEwNWwwIiwiYWNjZXNzQ29kZSI6IlBuVkJGViIsImNsaWVudElEIjoiOGJmMGIxMGItZTFhOC00OTU5LThjNTktMjZiODdmYjFmZWMzIiwiY2xpZW50U2VjcmV0IjoibWtTemNERkpkanhIUFdTUiJ9.zARKZ97_u-EkVC2u7HuQIEGELAlApq523A2OdhoWNps",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"stack\": \"frontend\",\r\n  \"level\": \"error\",\r\n  \"package\": \"component\",\r\n  \"message\": \"user entered invalid url format\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://20.244.56.144/evaluation-service/logs",
+					"protocol": "http",
+					"host": [
+						"20",
+						"244",
+						"56",
+						"144"
+					],
+					"path": [
+						"evaluation-service",
+						"logs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
